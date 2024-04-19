@@ -1,0 +1,34 @@
+﻿@MinimalApi_Example_CSharp_HostAddress = https://localhost:7025
+
+POST {{MinimalApi_Example_CSharp_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+
+###
+
+GET {{MinimalApi_Example_CSharp_HostAddress}}/todoitems
+
+###
+
+GET {{MinimalApi_Example_CSharp_HostAddress}}/todoitems/1
+
+###
+
+PUT {{MinimalApi_Example_CSharp_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
+
+DELETE {{MinimalApi_Example_CSharp_HostAddress}}/todoitems/1
+
+###
